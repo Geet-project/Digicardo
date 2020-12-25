@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#fff"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_5sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:background="#f7f8f9"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Social Networks"
+                    android:textColor="@color/commoncolor"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:id="@+id/AddProductText"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Whatsapp Number"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textSize="16sp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_5sdp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_telephone"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:hint="1243456789"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:id="@+id/WANumberEt"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="16sp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_5sdp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_telephone"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:hint="facebook url"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:id="@+id/FBURLEt"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram"
+                    android:textColor="@color/textcolor"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="16sp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_5sdp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_telephone"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:hint="Instagram url"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:id="@+id/instaurlEt"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <Button
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Submit"
+                    android:id="@+id/Submitbtn"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_5sdp"/>
+                <Button
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Cancel"
+                    android:id="@+id/Cancelbtn"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

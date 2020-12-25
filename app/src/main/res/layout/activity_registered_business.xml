@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f8f9"
+    tools:context=".Activities.RegisteredBusinessActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="#fff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:elevation="@dimen/_3sdp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:title=""
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/BackArrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Registered Businesses"
+                android:textColor="@color/commoncolor"
+                android:layout_gravity="start"/>
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:id="@+id/noti_icon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notiicon"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:cardBackgroundColor="#fff"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/SearchCardView"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_5sdp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_telephone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Type Here to Search"
+                android:drawablePadding="@dimen/_15sdp"
+                android:id="@+id/FounderNameEt"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="3"
+            android:text="Search"
+            android:textSize="11sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:id="@+id/SearchBtn"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        tools:listitem="@layout/layout_regbusiness"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:id="@+id/RegBusinessRecyclerView"/>
+
+</LinearLayout>
+</layout>

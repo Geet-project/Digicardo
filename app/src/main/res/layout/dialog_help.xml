@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_20sdp"
+                android:background="#f7f8f9"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#fff"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            style="@style/mySpinnerItemStyle"
+                            android:entries="@array/BusinessCategory"
+                            android:background="@drawable/spinner_bg"
+                            android:id="@+id/DepartmentSpinner"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#fff"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            style="@style/mySpinnerItemStyle"
+                            android:entries="@array/BusinessCategory"
+                            android:background="@drawable/spinner_bg"
+                            android:id="@+id/Priorityspinner"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    app:cardBackgroundColor="#fff"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="@dimen/_5sdp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:lines="4"
+                        android:gravity="top"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:inputType="textMultiLine"
+                        android:scrollbars="vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:hint="Message"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:id="@+id/BusinessDescriptionEt"/>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentRight="true"
+                    android:text="Submit"
+                    android:id="@+id/Submitbtn"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Digicardo</string>
+    <string name="splash_make_in_india">Made with ❤ in India 🇮🇳</string>
+    <string name="splash_by">By Neha Industries</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_pin"><u>Forgot Pin ?</u></string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="do_you_want_to_become_reseller">Do you want to become<b> Reseller ?</b></string>
+    <string name="loremipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="lorem_heading">Lorem ipsum dolor sit amet, consectetur?</string>
+
+    <integer-array name="bannerimage">
+        <item>@drawable/banner</item>
+        <item>@drawable/banner</item>
+        <item>@drawable/banner</item>
+        <item>@drawable/banner</item>
+    </integer-array>
+
+    <integer-array name="trendingimages">
+        <item>@drawable/architect</item>
+        <item>@drawable/architect</item>
+        <item>@drawable/architect</item>
+        <item>@drawable/architect</item>
+    </integer-array>
+
+    <string-array name="trendingnames">
+        <item>Architect</item>
+        <item>Architect</item>
+        <item>Architect</item>
+        <item>Architect</item>
+    </string-array>
+
+    <integer-array name="DigiMyZoneImg">
+        <item>@drawable/myprofile</item>
+        <item>@drawable/mybusiness</item>
+        <item>@drawable/register</item>
+        <item>@drawable/mybusiness</item>
+    </integer-array>
+
+    <string-array name="DigiMyZoneText">
+        <item>My Profile</item>
+        <item>My Business</item>
+        <item>Register New\n Business</item>
+        <item>Registered\n Businesses</item>
+    </string-array>
+
+    <integer-array name="DigiBonusImg">
+        <item>@drawable/referalbonus</item>
+        <item>@drawable/gift</item>
+    </integer-array>
+
+    <string-array name="DigiBonusText">
+        <item>Referral Bonus</item>
+        <item>Gifts &amp; Offers</item>
+    </string-array>
+
+    <integer-array name="noti_images">
+        <item>@drawable/notificationpicture</item>
+        <item>@drawable/notificationpicture</item>
+        <item>@drawable/notificationpicture</item>
+    </integer-array>
+    <string-array name="noti_name">
+        <item>Geetika Singhania</item>
+        <item>Geetika Singhania</item>
+        <item>Geetika Singhania</item>
+    </string-array>
+    <string-array name="notidesc">
+        <item>She has searched about Interior Designer Category in noida location.\nBe the first to meet her.</item>
+        <item>She has searched about Interior Designer Category in noida location.\nBe the first to meet her.</item>
+        <item>She has searched about Interior Designer Category in noida location.\nBe the first to meet her.</item>
+    </string-array>
+    <string-array name="notitime">
+        <item>5 hrs ago</item>
+        <item>5 hrs ago</item>
+        <item>5 hrs ago</item>
+    </string-array>
+
+    <string-array name="Username">
+        <item>Geetika Sachdeva</item>
+        <item>Geetika Sachdeva</item>
+    </string-array>
+
+    <string-array name="BusinessCategory">
+        <item>Web Development</item>
+        <item>Mobile App Development</item>
+    </string-array>
+
+    <string-array name="ProductNames">
+        <item>Web Development</item>
+        <item>Game Development</item>
+        <item>Mobile App Development</item>
+        <item>Digital Marketing</item>
+    </string-array>
+
+    <string-array name="Addresstitle">
+        <item>Branch Address 1</item>
+        <item>Branch Address 2</item>
+        <item>Branch Address 3</item>
+        <item>Branch Address 4</item>
+        <item>Branch Address 1</item>
+        <item>Branch Address 1</item>
+        <item>Branch Address 1</item>
+        <item>Branch Address 1</item>
+    </string-array>
+
+    <integer-array name="SocialIcons">
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+        <item>@drawable/tele_icon</item>
+
+    </integer-array>
+
+    <string-array name="HelpHeading">
+        <item>@string/lorem_heading</item>
+        <item>@string/lorem_heading</item>
+        <item>@string/lorem_heading</item>
+        <item>@string/lorem_heading</item>
+        <item>@string/lorem_heading</item>
+    </string-array>
+
+    <string-array name="HelpValue">
+        <item>@string/loremipsum</item>
+        <item>@string/loremipsum</item>
+        <item>@string/loremipsum</item>
+        <item>@string/loremipsum</item>
+        <item>@string/loremipsum</item>
+    </string-array>
+
+    <integer-array name="offersimages">
+        <item>@drawable/offers1</item>
+        <item>@drawable/offers2</item>
+        <item>@drawable/offers3</item>
+        <item>@drawable/offers4</item>
+
+
+    </integer-array>
+</resources>

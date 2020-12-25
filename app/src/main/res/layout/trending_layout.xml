@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:src="@drawable/architect"
+        android:id="@+id/trendingimg"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Architect"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#3E3D3D"
+        android:id="@+id/trendingname"/>
+
+
+</LinearLayout>

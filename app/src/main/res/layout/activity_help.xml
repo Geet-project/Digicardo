@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8f9"
+    android:orientation="vertical"
+    tools:context=".Activities.HelpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="#fff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:elevation="@dimen/_3sdp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:title=""
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/digicardologo"/>
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:id="@+id/noti_icon"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notiicon"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textSize="26sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/commoncolor"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/layout_help"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/helprecyclerview"/>
+
+
+</LinearLayout>
+</layout>

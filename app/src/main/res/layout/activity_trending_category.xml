@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8f9"
+    android:orientation="vertical"
+    tools:context=".Activities.TrendingCategoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="#fff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:elevation="@dimen/_3sdp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:title=""
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/BackArrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Trending Categories"
+                android:textColor="@color/commoncolor"
+                android:layout_gravity="start"/>
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:id="@+id/noti_icon"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notiicon"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:cardBackgroundColor="#fff"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/SearchCardView"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_5sdp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_telephone"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Type Here to Search"
+                android:drawablePadding="@dimen/_15sdp"
+                android:id="@+id/FounderNameEt"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_weight="3"
+            android:text="Search"
+            android:textSize="11sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:id="@+id/SearchBtn"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:textSize="16sp"
+                android:text="Trending Categories"
+                android:textColor="@color/commoncolor"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            android:layout_marginBottom="@dimen/_15sdp"
+            tools:listitem="@layout/trending_layout"
+            android:orientation="vertical"
+            android:id="@+id/AllTrendingCatRecyclerView"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+</layout>

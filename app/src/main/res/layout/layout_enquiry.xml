@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardBackgroundColor="#fff"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/ReadText"
+                android:text="Read"
+                android:background="@drawable/custom_bg"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internet Website Designers"
+                android:textColor="#222121"
+                android:textSize="17sp"
+                android:id="@+id/EnquiryName"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jaipur, Jhotwara"
+                    android:id="@+id/Location"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" · "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 24 Nov 2020, 7:45 pm"
+                    android:id="@+id/DateValue"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#636161"
+                android:layout_marginTop="@dimen/_8sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enquired for Internet Website Designers.\nKidly send me price and other details"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/EnquiredForText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Info"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geetika Sachdeva"
+                android:textColor="#222121"
+                android:id="@+id/UserName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sachdevageetika88@gmail.com"
+                android:id="@+id/UserEmail"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/contact_bg"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="Call"
+                    android:drawableLeft="@drawable/call"
+                    android:textColor="@color/commoncolor"
+                    android:gravity="center"
+                    android:id="@+id/CallBtn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/CallBtn"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/chat"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/contact_bg"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="Message"
+                    android:id="@+id/Message"
+
+                    android:textColor="@color/commoncolor"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_toRightOf="@id/Message"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/contact_bg"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="Email"
+                    android:textColor="@color/commoncolor"
+                    android:gravity="center"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

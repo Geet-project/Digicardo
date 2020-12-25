@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/home_nav"/>
+    <item
+        android:title="My Profile"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/profile_nav"/>
+    <item
+        android:title="My Business"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/business_nav"/>
+
+    <item
+        android:title="Business Categories"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/categories_nav"/>
+    <item
+        android:title="Leads"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/leads_nav"/>
+    <item
+        android:title="Refer &amp; Earn "
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/refer_nav"/>
+    <item
+        android:title="Help"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/help_nav"/>
+    <item
+        android:title="About Us"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/about_nav"/>
+    <item
+        android:title="Privacy Policy"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/privacy_nav"/>
+    <item
+        android:title="Terms &amp; Conditions"
+        android:icon="@drawable/ic_telephone"
+        android:id="@+id/terms_nav"/>
+
+
+
+</menu>

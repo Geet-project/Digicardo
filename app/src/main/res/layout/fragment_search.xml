@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8f9"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical"
+    tools:context=".Fragments.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:cardBackgroundColor="#fff"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_2sdp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@null"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Web"
+                android:drawablePadding="@dimen/_15sdp"
+                android:id="@+id/ServiceSearchEt"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:cardBackgroundColor="#fff"
+            android:layout_weight="1"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/_2sdp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@null"
+                android:paddingLeft="@dimen/_10sdp"
+                android:hint="Jaipur"
+                android:drawablePadding="@dimen/_15sdp"
+                android:id="@+id/LocationServiceEt"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        tools:listitem="@layout/layout_searchlisting"
+        android:id="@+id/SearchListingRecyclerView"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>
+</layout>

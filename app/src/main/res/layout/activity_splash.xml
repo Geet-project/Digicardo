@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Activities.SplashActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:id="@+id/lion"
+                android:layout_gravity="center"
+                android:src="@drawable/makeinindia"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lion"
+                android:layout_gravity="center"
+                android:id="@+id/textmakeinindia"
+                android:text="@string/splash_make_in_india"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textmakeinindia"
+                android:layout_gravity="center"
+                android:id="@+id/textnehaindustries"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/splash_by"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
